@@ -32,14 +32,23 @@ const ResumeSection = () => {
               </p>
             </div>
 
-            <div className="shrink-0 flex flex-col sm:flex-row items-center gap-3">
+            <div className="shrink-0 flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
               <button
                 onClick={() => setIsResumeModalOpen(true)}
                 className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-brand-orange hover:bg-brand-orange-hover text-white font-bold text-sm tracking-wide transition-all shadow-xl shadow-brand-orange/30 flex items-center justify-center space-x-2 group cursor-pointer hover:scale-105"
               >
                 <Eye size={16} />
-                <span>View Full CV & PDF</span>
+                <span>View Full CV</span>
               </button>
+
+              <a
+                href="/Subham_Kumar_Resume.pdf"
+                download="Subham_Kumar_Resume.pdf"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm tracking-wide transition-all flex items-center justify-center space-x-2 cursor-pointer hover:border-brand-orange"
+              >
+                <Download size={16} />
+                <span>Download PDF</span>
+              </a>
             </div>
 
           </div>

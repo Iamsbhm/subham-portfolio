@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowRight, MousePointer2, Layers, PenTool, LayoutGrid } from 'lucide-react';
+import { Sparkles, ArrowRight, MousePointer2, Layers, PenTool, LayoutGrid, Download } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Hero = () => {
@@ -151,6 +151,15 @@ const Hero = () => {
               <span>Explore Flagship Case Study</span>
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>
+
+            <a
+              href="/Subham_Kumar_Resume.pdf"
+              download="Subham_Kumar_Resume.pdf"
+              className="px-6 py-3 rounded-full bg-brand-orange hover:bg-brand-orange-hover text-white font-bold text-xs sm:text-sm transition-all shadow-md flex items-center space-x-2 cursor-pointer hover:scale-105"
+            >
+              <Download size={15} />
+              <span>Download CV / Resume</span>
+            </a>
 
             <button
               onClick={scrollToContact}

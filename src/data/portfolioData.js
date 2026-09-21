@@ -1,15 +1,15 @@
 export const personalInfo = {
-  name: "Subham",
-  role: "Senior Product Designer",
-  experienceYears: 3,
+  name: "SUBHAM KUMAR",
+  role: "UI/UX Designer",
+  experienceYears: 2,
   rating: 5,
   heroTag: "Hello!",
-  tagline: "Bridging Human Empathy & Business Impact",
-  bio: "Senior Product Designer with 3+ years of experience designing high-impact fintech, travel, and B2B SaaS platforms. Specialized in end-to-end UX research, scalable design systems, and conversion-focused product experiences.",
+  tagline: "Product-focused UI/UX Designer creating fintech, SaaS, web, and mobile experiences",
+  bio: "Product-focused UI/UX Designer with 2+ years of experience creating fintech, SaaS, web, and mobile experiences across the full product design lifecycle. Strong background in human-centered design, user research, information architecture, interaction patterns, usability evaluation, responsive interfaces, accessibility, and design systems.",
   email: "subhamkumar614@gmail.com",
   phone: "+91 6201072469",
-  location: "India / Available Globally (Remote)",
-  availability: "Open for Full-Time & High-Impact Contracts",
+  location: "Delhi, India • Open to Remote Opportunities",
+  availability: "Open to Remote & Full-Time Opportunities",
   metricsSummary: [
     { label: "Conversion Lift", value: "+38%" },
     { label: "SUS Usability Score", value: "88/100" },
@@ -17,73 +17,131 @@ export const personalInfo = {
     { label: "Production Components", value: "120+" }
   ],
   socials: [
-    { name: "Dribbble", url: "https://dribbble.com" },
-    { name: "Behance", url: "https://behance.net" },
     { name: "LinkedIn", url: "https://linkedin.com" },
-    { name: "GitHub", url: "https://github.com" },
-    { name: "Figma Community", url: "https://figma.com" },
+    { name: "Dribbble", url: "https://dribbble.com" },
+    { name: "Portfolio", url: "https://github.com/Iamsbhm/subham-portfolio" },
   ]
 };
 
 export const resumeData = {
-  summary: "Results-driven Product Designer with 3+ years of specialized experience across Fintech, Mobile App Architecture, and Design Systems. Proven track record of reducing funnel drop-off by 38%, conducting 50+ qualitative user interviews, and building scalable 100+ token design systems.",
+  summary: "Product-focused UI/UX Designer with 2+ years of experience creating fintech, SaaS, web, and mobile experiences across the full product design lifecycle. Strong background in human-centered design, user research, information architecture, interaction patterns, usability evaluation, responsive interfaces, accessibility, and design systems. Advanced Figma expertise across Auto Layout, Components, Variants, prototyping, and developer handoff. Experienced collaborating across product, engineering, and business functions to translate requirements into intuitive, scalable, and accessible digital products within Agile/Scrum environments.",
   education: [
     {
       degree: "Bachelor of Technology (B.Tech.) – Computer Science and Engineering",
       institution: "Silicon Institute of Technology",
       year: "2020 – 2024",
-      details: "Specialized in Human-Computer Interaction (HCI) & User-Centered Software Engineering"
+      details: "Comprehensive training in software engineering, algorithms, human-computer interaction, and design systems."
     }
   ],
-  certifications: [
-    "Nielsen Norman Group (NN/g) UX Master Certified",
-    "Figma Certified Professional & Design Systems Architect",
-    "Interaction Design Foundation (IxDF) Mobile UX Specialist"
+  skillsStructured: [
+    {
+      category: "UX Research & Strategy",
+      items: "User Research, User Interviews, Usability Testing, Competitive Analysis, UX Audits, Design Thinking, Product Thinking, User-Centered Design"
+    },
+    {
+      category: "UX & Product Design",
+      items: "User Flows, Journey Mapping, Information Architecture, Interaction Design, Wireframing, Task Analysis, Prototyping, Prototype Validation"
+    },
+    {
+      category: "UI & Visual Design",
+      items: "UI Design, Visual Design, Responsive Design, Mobile UI, Web Design, Visual Hierarchy, Typography, Color Theory, Data Visualization"
+    },
+    {
+      category: "Design Systems & Accessibility",
+      items: "Design Systems, Component Libraries, Reusable Components, Design Tokens, Figma Auto Layout, Components, Variants, WCAG 2.1 AA, Inclusive Design, Accessible Interaction Patterns"
+    },
+    {
+      category: "Design Tools",
+      items: "Figma, FigJam, Adobe XD, Canva, Miro, Jira"
+    },
+    {
+      category: "Technical Skills",
+      items: "HTML, CSS, JavaScript, WordPress, Elementor, WooCommerce, Git, GitHub, VS Code"
+    },
+    {
+      category: "Collaboration",
+      items: "Agile, Scrum, Stakeholder Management, Cross-functional Collaboration, Design Reviews, Design Critiques, Design Documentation, Developer Handoff"
+    }
   ],
-  skills: {
-    research: ["User Interviews", "Usability Testing (Maze)", "Persona Journey Mapping", "Competitive Heuristics", "Information Architecture"],
-    design: ["Design Systems (Tokens)", "High-Fidelity Prototyping", "Micro-Interactions", "Responsive Web & Mobile (iOS/Android)", "Accessibility (WCAG 2.1 AA)"],
-    tools: ["Figma", "Framer", "Adobe XD / Illustrator", "Maze", "Notion", "HTML5 / Tailwind CSS", "Lottie / After Effects"]
-  }
+  experience: [
+    {
+      title: "UI/UX Designer",
+      company: "SwiftSBF",
+      type: "Remote, Full-Time",
+      period: "Sept 2024 – Present",
+      bullets: [
+        "Owned the end-to-end product design lifecycle for financial-services web and mobile experiences, converting user needs and business requirements into user flows, wireframes, prototypes, responsive screens, and implementation-ready Figma specifications; shortened design-to-development handoff time by 30%.",
+        "Analyzed navigation, content hierarchy, task paths, and interaction patterns to uncover friction points, translating findings into iterative solutions that improved product clarity and reduced UI-related support issues.",
+        "Established a scalable Figma component library containing 60+ reusable elements across forms, buttons, modals, charts, tables, icons, and alerts, increasing interface consistency across product and growth initiatives.",
+        "Embedded responsive behavior, WCAG 2.1 accessibility principles, inclusive design practices, and micro-interactions into desktop and mobile experiences to support consistent behavior across breakpoints.",
+        "Coordinated cross-functional delivery across product, engineering, and business teams in Agile/Scrum workflows, facilitating design critiques and reviews, documenting decisions, resolving implementation questions, and incorporating structured feedback into subsequent iterations."
+      ]
+    }
+  ],
+  projects: [
+    {
+      title: "AlphaTrade Pro – Trading Platform",
+      bullets: [
+        "Audited 5+ trading platforms to benchmark navigation, chart interaction, watchlists, market analysis, and order-placement workflows; mapped core user journeys to identify usability and information-hierarchy opportunities.",
+        "Translated findings into low-fidelity concepts, high-fidelity screens, and interactive Figma prototypes supported by a 50+ component library; optimized dashboard hierarchy across 8+ responsive breakpoints, reducing data-interpretation time by 40%."
+      ]
+    },
+    {
+      title: "Aetheric Aviation – Flight Booking Website",
+      bullets: [
+        "Investigated a 9-screen booking journey through UX research and task analysis, identifying navigation and information-architecture barriers across key booking tasks.",
+        "Restructured task flows and developed wireframes, polished interfaces, and interactive prototypes validated with 10+ participants across two rounds; streamlined the journey from 9 screens to 4, cutting task completion time by 35% and improving accessibility evaluation results by 60%."
+      ]
+    },
+    {
+      title: "Medi Care – Healthcare Appointment App",
+      bullets: [
+        "Interviewed 12+ participants to uncover usability barriers affecting older and less tech-savvy users across iOS and Android appointment workflows; identified opportunities to simplify navigation and reduce input complexity.",
+        "Reframed the information architecture, eliminated redundant fields, and condensed the process from 7 stages to 3; established a WCAG 2.1 AA-focused component system with 40+ reusable elements, increasing task success by 50% and reducing measured drop-off by 45%."
+      ]
+    },
+    {
+      title: "FlowCRM – SaaS CRM Dashboard Redesign",
+      bullets: [
+        "Evaluated a SaaS CRM dashboard through user research, competitive benchmarking, and information-architecture analysis to uncover navigation and task-efficiency gaps.",
+        "Produced wireframes, high-fidelity interfaces, Auto Layout components, and clickable prototypes in Figma; refined navigation and task structure to deliver 35% faster task completion and a 30% improvement in usability testing results."
+      ]
+    },
+    {
+      title: "QuickBite – Food Delivery Mobile App",
+      bullets: [
+        "Crafted a responsive food-delivery experience centered on streamlined navigation, accessible interaction patterns, visual hierarchy, and key ordering flows.",
+        "Applied prototype validation and usability feedback to refine the ordering journey, contributing to a 28% increase in measured user satisfaction."
+      ]
+    },
+    {
+      title: "StyleCart – E-Commerce Website Redesign",
+      bullets: [
+        "Reworked an e-commerce experience using design thinking, responsive grids, information architecture, typography, and content hierarchy to improve browsing efficiency.",
+        "Simplified category structures and discovery paths, making product exploration more intuitive and improving measured product discovery by 38%."
+      ]
+    }
+  ],
+  achievements: [
+    {
+      title: "Finalist – Smart India Hackathon 2022",
+      desc: "Selected as a finalist in a national-level innovation and software development competition involving 10,000+ participants across India."
+    }
+  ]
 };
 
 export const workExperience = [
   {
     id: 1,
-    title: "User Interface & Product Designer",
-    period: "Sept 2024 - Present",
-    company: "Swift SBF",
-    type: "Remote - Full Time",
-    description: "Leading the core product experience for a next-generation SME lending and loan processing platform.",
+    title: "UI/UX Designer",
+    period: "Sept 2024 – Present",
+    company: "SwiftSBF",
+    type: "Remote, Full-Time",
+    description: "Leading the end-to-end product design lifecycle for financial-services web and mobile experiences.",
     achievements: [
-      "Redesigned the loan application funnel, cutting onboarding friction from 7 steps to 3, boosting conversion by 38%.",
-      "Created a multi-brand Figma Design System of 140+ components, reducing frontend sprint turnaround by 40%.",
-      "Led continuous bi-weekly usability benchmark testing with 45+ SME business owners."
-    ]
-  },
-  {
-    id: 2,
-    title: "User Interface Designer",
-    period: "Sep 2020 - July 2023",
-    company: "Carikture",
-    type: "Full Time / Digital Agency",
-    description: "Spearheaded UI/UX design deliverables for 14+ venture-backed startup clients across ecommerce, consumer travel, and SaaS analytics.",
-    achievements: [
-      "Crafted mobile-first responsive interfaces that drove a collective $4M+ in transaction volume for clients.",
-      "Conducted 30+ discovery workshops with client C-suite stakeholders to translate business goals into clickable prototypes.",
-      "Mentored 3 junior design interns and standardized agency design documentation."
-    ]
-  },
-  {
-    id: 3,
-    title: "User Interface Designer Intern",
-    period: "July 2023 - Sept 2023",
-    company: "Plade",
-    type: "Internship",
-    description: "Collaborated with senior product managers to optimize mobile micro-interactions and interactive gesture prototypes.",
-    achievements: [
-      "Designed interactive Lottie micro-animations for transaction completion screens.",
-      "Conducted competitive audit of 8 leading fintech apps to define biometric verification flow standards."
+      "Converted user needs and business requirements into user flows, wireframes, prototypes, and Figma specifications; shortened handoff time by 30%.",
+      "Analyzed navigation, content hierarchy, task paths, and interaction patterns to uncover friction points.",
+      "Established a scalable Figma component library containing 60+ reusable elements across forms, buttons, modals, charts, tables, icons, and alerts."
     ]
   }
 ];
@@ -93,7 +151,7 @@ export const featuredCaseStudies = [
     id: "lendify-flagship",
     badge: "Fintech & Web Architecture",
     title: "Lendify — Revolutionizing SME Loan Applications",
-    client: "Swift SBF / Lendify",
+    client: "SwiftSBF / Lendify",
     tagline: "Designing for Transparency & Financial Trust",
     role: "Lead Product Designer (Research, UX Architecture, UI System)",
     duration: "4 Months (Q3 - Q4)",
@@ -243,113 +301,6 @@ export const featuredCaseStudies = [
 
 export const flagshipCaseStudy = featuredCaseStudies[0];
 
-export const expertiseCategories = [
-  {
-    id: "ui-ux",
-    title: "UI/ UX Design",
-    description: "Creating intuitive interfaces focused on accessibility, micro-interactions, and visual harmony.",
-    badgeColor: "bg-orange-500",
-    images: [
-      "https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-    ],
-    skills: ["User Journey Mapping", "Usability Testing", "High-Fidelity Wireframes", "Design Tokens"]
-  },
-  {
-    id: "web-design",
-    title: "Web Design",
-    description: "Crafting high-converting responsive websites with modern aesthetic frameworks and crisp typography.",
-    badgeColor: "bg-orange-500",
-    images: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
-    ],
-    skills: ["Responsive Layouts", "CSS/Tailwind Architecture", "Web Performance Optimization", "Micro-Interactions"]
-  },
-  {
-    id: "landing-page",
-    title: "Landing Page",
-    description: "Architecting narrative-driven landing pages designed for high engagement and seamless lead capture.",
-    badgeColor: "bg-orange-500",
-    images: [
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80"
-    ],
-    skills: ["Conversion Rate Optimization", "Copy Layout", "A/B Testing Structure", "CTA Hierarchy"]
-  }
-];
-
-export const marqueeItems = [
-  "UX Design",
-  "App Design",
-  "Dashboard",
-  "Wireframe",
-  "User Research",
-  "Product Strategy",
-  "Prototyping",
-  "Design Systems",
-  "Micro-Interactions"
-];
-
-export const designTools = [
-  { name: "Figma", level: "Expert", icon: "🎨", percent: 96 },
-  { name: "Framer", level: "Advanced", icon: "⚡", percent: 92 },
-  { name: "Design Systems & Tokens", level: "Expert", icon: "❖", percent: 95 },
-  { name: "Adobe XD / Illustrator", level: "Advanced", icon: "✏️", percent: 88 },
-  { name: "Maze & Usability Testing", level: "Advanced", icon: "🧪", percent: 90 },
-  { name: "HTML5 / Tailwind CSS", level: "Advanced", icon: "💻", percent: 86 }
-];
-
-export const designProcess = [
-  {
-    step: "01",
-    name: "Empathize & Research",
-    desc: "Conducting stakeholder interviews, analyzing user behavior data, mapping user personas, and evaluating competitor ecosystems."
-  },
-  {
-    step: "02",
-    name: "Wireframe & Flow Architecture",
-    desc: "Architecting low-fidelity wireframes, mapping click-through user flows, and validating core feature hierarchy before visuals."
-  },
-  {
-    step: "03",
-    name: "High-Fidelity UI & Systems",
-    desc: "Crafting polished pixel-perfect interfaces, color palettes, responsive layouts, micro-interactions, and reusable component libraries."
-  },
-  {
-    step: "04",
-    name: "Usability Test & Handoff",
-    desc: "Testing interactive prototypes with real users, refining friction points, and packaging tokens & specs for engineering handoff."
-  }
-];
-
-export const testimonials = [
-  {
-    id: 1,
-    quote: "Subham transformed our fintech platform with an insanely slick UI. Our user drop-off rate fell by 38% after launching his redesigned loan flow. He bridges business goals and user needs effortlessly.",
-    author: "Alex Rivers",
-    role: "Head of Product",
-    company: "Swift SBF",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
-  },
-  {
-    id: 2,
-    quote: "Working with Subham was seamless. He takes raw, messy requirements and crafts clean, intuitive interfaces that delight users and engineering teams alike. Hire him immediately.",
-    author: "Elena Rostova",
-    role: "Design Director",
-    company: "Carikture Agency",
-    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
-  },
-  {
-    id: 3,
-    quote: "Subham's attention to detail in design tokens, micro-animations, and mobile responsiveness is top-tier. A true Product Designer who understands engineering constraints.",
-    author: "Marcus Chen",
-    role: "Lead Engineer",
-    company: "Plade Tech",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
-  }
-];
-
 export const portfolioProjects = [
   {
     id: "lendify",
@@ -398,49 +349,141 @@ export const portfolioProjects = [
     mockupType: "wanderly"
   },
   {
-    id: "purple-loan",
-    title: "Loan UI Platform",
-    tagline: "Instant Personal Credit & Repayment",
+    id: "alphatrade",
+    title: "AlphaTrade Pro",
+    tagline: "Trading & Market Analysis Platform",
     category: "UI/ UX Design",
     tag: "UI/ UX Design",
-    description: "Modern purple-themed mobile UI layout offering real-time credit score monitoring and flexible payment installment selection.",
-    fullCaseStudy: "Designed for millennial borrowers looking for transparent credit terms. Features dark-mode ready components, micro-interactions, and instant eligibility calculations.",
+    description: "Audited 5+ trading platforms to benchmark navigation, chart interaction, watchlists, and order placement; optimized dashboard hierarchy across 8+ responsive breakpoints, reducing data-interpretation time by 40%.",
     themeColor: "from-purple-500/20 to-indigo-500/10",
     accentColor: "#8B5CF6",
     colors: ["#8B5CF6", "#4C1D95", "#F5F3FF", "#18181B"],
     featured: false,
-    highlights: ["Credit score gauge visualizer", "Flexible EMI customizer", "Biometric authorization step"],
     mockupType: "purple-loan"
   },
   {
-    id: "sugee",
-    title: "Sugee Analytics",
-    tagline: "Simpler, Brighter Control Dashboard",
+    id: "medicare",
+    title: "Medi Care App",
+    tagline: "Healthcare Appointment Mobile Experience",
     category: "App Design",
     tag: "App Design",
-    description: "Sleek green dashboard for tracking interest rates, growth ratios, and daily financial credit metrics with clean graphs.",
-    fullCaseStudy: "Sugee streamlines complex corporate balance sheets and portfolio investments into clean visual cards and real-time line charts.",
+    description: "Simplified healthcare appointment booking for 12+ participants across iOS & Android; established WCAG 2.1 AA design system with 40+ elements, increasing task success by 50% and reducing drop-off by 45%.",
     themeColor: "from-emerald-600/20 to-green-500/10",
     accentColor: "#059669",
     colors: ["#059669", "#064E3B", "#ECFDF5", "#0F172A"],
     featured: false,
-    highlights: ["Interactive growth chart widget", "Automated CSV report export", "Custom metric thresholds"],
     mockupType: "sugee"
   },
   {
-    id: "inetrade",
-    title: "ineTrade Hub",
-    tagline: "Trading & Entertainment Galaxy App",
+    id: "flowcrm",
+    title: "FlowCRM Platform",
+    tagline: "SaaS CRM Dashboard & Task Engine",
     category: "App Design",
     tag: "App Design",
-    description: "Vibrant yellow/gold mobile platform featuring live market tickers, movie universe trading cards, and community portfolio sharing.",
-    fullCaseStudy: "A hybrid entertainment and asset trading experience created for next-gen collectors and entertainment asset traders.",
+    description: "High-fidelity Auto Layout components and clickable Figma prototypes delivering 35% faster task completion and 30% usability score improvement.",
     themeColor: "from-amber-500/20 to-orange-500/10",
     accentColor: "#EAB308",
     colors: ["#EAB308", "#78350F", "#FEFCE8", "#09090B"],
     featured: false,
-    highlights: ["Live streaming price ticker", "NFT & card collection showcase", "Social community leaderboards"],
     mockupType: "inetrade"
+  }
+];
+
+export const expertiseCategories = [
+  {
+    id: "ui-ux",
+    title: "UI/ UX Design",
+    description: "Creating intuitive interfaces focused on accessibility, micro-interactions, and visual harmony.",
+    badgeColor: "bg-orange-500",
+    images: [
+      "https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+    ],
+    skills: ["User Journey Mapping", "Usability Testing", "High-Fidelity Wireframes", "Design Tokens"]
+  },
+  {
+    id: "web-design",
+    title: "Web Design",
+    description: "Crafting high-converting responsive websites with modern aesthetic frameworks and crisp typography.",
+    badgeColor: "bg-orange-500",
+    images: [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
+    ],
+    skills: ["Responsive Layouts", "CSS/Tailwind Architecture", "Web Performance Optimization", "Micro-Interactions"]
+  },
+  {
+    id: "landing-page",
+    title: "Landing Page",
+    description: "Architecting narrative-driven landing pages designed for high engagement and seamless lead capture.",
+    badgeColor: "bg-orange-500",
+    images: [
+      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80"
+    ],
+    skills: ["Conversion Rate Optimization", "Copy Layout", "A/B Testing Structure", "CTA Hierarchy"]
+  }
+];
+
+export const marqueeItems = [
+  "UX Design",
+  "App Design",
+  "Dashboard",
+  "Wireframe",
+  "User Research",
+  "Product Strategy",
+  "Prototyping",
+  "Design Systems",
+  "Micro-Interactions"
+];
+
+export const designProcess = [
+  {
+    step: "01",
+    name: "Empathize & Research",
+    desc: "Conducting stakeholder interviews, analyzing user behavior data, mapping user personas, and evaluating competitor ecosystems."
+  },
+  {
+    step: "02",
+    name: "Wireframe & Flow Architecture",
+    desc: "Architecting low-fidelity wireframes, mapping click-through user flows, and validating core feature hierarchy before visuals."
+  },
+  {
+    step: "03",
+    name: "High-Fidelity UI & Systems",
+    desc: "Crafting polished pixel-perfect interfaces, color palettes, responsive layouts, micro-interactions, and reusable component libraries."
+  },
+  {
+    step: "04",
+    name: "Usability Test & Handoff",
+    desc: "Testing interactive prototypes with real users, refining friction points, and packaging tokens & specs for engineering handoff."
+  }
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    quote: "Subham transformed our fintech platform with an insanely slick UI. Our user drop-off rate fell by 38% after launching his redesigned loan flow. He bridges business goals and user needs effortlessly.",
+    author: "Alex Rivers",
+    role: "Head of Product",
+    company: "SwiftSBF",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    id: 2,
+    quote: "Working with Subham was seamless. He takes raw, messy requirements and crafts clean, intuitive interfaces that delight users and engineering teams alike. Hire him immediately.",
+    author: "Elena Rostova",
+    role: "Design Director",
+    company: "Carikture Agency",
+    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    id: 3,
+    quote: "Subham's attention to detail in design tokens, micro-animations, and mobile responsiveness is top-tier. A true Product Designer who understands engineering constraints.",
+    author: "Marcus Chen",
+    role: "Lead Engineer",
+    company: "Plade Tech",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
   }
 ];
 
