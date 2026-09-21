@@ -29,10 +29,10 @@ export const resumeData = {
   summary: "Results-driven Product Designer with 3+ years of specialized experience across Fintech, Mobile App Architecture, and Design Systems. Proven track record of reducing funnel drop-off by 38%, conducting 50+ qualitative user interviews, and building scalable 100+ token design systems.",
   education: [
     {
-      degree: "Bachelor of Science in Interaction Design & HCI",
-      institution: "State University of Technology",
-      year: "2019 - 2023",
-      details: "Dean's Honor List, President of Student UI/UX Society"
+      degree: "Bachelor of Technology (B.Tech.) – Computer Science and Engineering",
+      institution: "Silicon Institute of Technology",
+      year: "2020 – 2024",
+      details: "Specialized in Human-Computer Interaction (HCI) & User-Centered Software Engineering"
     }
   ],
   certifications: [
