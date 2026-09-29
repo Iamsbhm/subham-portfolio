@@ -60,6 +60,38 @@ const ContactSection = () => {
 
             <div className="space-y-4 pt-2">
               
+              {/* WhatsApp Instant Chat Card (Highlighted) */}
+              <div className="flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-emerald-900/20 to-black/40 border border-emerald-500/30 hover:border-emerald-500/60 transition-all">
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                    <MessageSquare size={18} />
+                  </div>
+                  <div>
+                    <div className="flex items-center space-x-1.5">
+                      <span className="text-[11px] text-emerald-400 font-bold uppercase tracking-wider">Instant Chat</span>
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                    </div>
+                    <a
+                      href={`https://wa.me/916201072469?text=${encodeURIComponent('Hi Subham, I saw your product design portfolio and would love to discuss an opportunity!')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-bold text-white hover:text-emerald-300 transition-colors"
+                    >
+                      Chat on WhatsApp (+91 6201072469)
+                    </a>
+                  </div>
+                </div>
+
+                <a
+                  href={`https://wa.me/916201072469?text=${encodeURIComponent('Hi Subham, I saw your product design portfolio and would love to discuss an opportunity!')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-gray-950 text-xs font-bold transition-all shadow-md cursor-pointer shrink-0"
+                >
+                  Start Chat ➔
+                </a>
+              </div>
+
               {/* Email Contact Card */}
               <div className="flex items-center justify-between p-3.5 rounded-2xl bg-white/5 border border-white/10 hover:border-brand-orange/40 transition-all">
                 <div className="flex items-center space-x-3">
@@ -86,14 +118,14 @@ const ContactSection = () => {
                 </button>
               </div>
 
-              {/* Phone / WhatsApp Card */}
+              {/* Phone / Mobile Card */}
               <div className="flex items-center justify-between p-3.5 rounded-2xl bg-white/5 border border-white/10 hover:border-brand-orange/40 transition-all">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange shrink-0">
                     <Phone size={18} />
                   </div>
                   <div>
-                    <span className="text-[11px] text-gray-400 font-semibold block uppercase">Mobile & WhatsApp</span>
+                    <span className="text-[11px] text-gray-400 font-semibold block uppercase">Direct Phone</span>
                     <a
                       href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}
                       className="text-sm font-bold text-white hover:text-brand-orange transition-colors font-mono"
@@ -118,9 +150,9 @@ const ContactSection = () => {
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <span className="text-[11px] text-gray-400 font-semibold block uppercase">Location</span>
+                  <span className="text-[11px] text-gray-400 font-semibold block uppercase">Location & Status</span>
                   <span className="text-sm font-bold text-white">
-                    {personalInfo.location}
+                    {personalInfo.location} • <span className="text-emerald-400 font-normal">Immediate Availability</span>
                   </span>
                 </div>
               </div>

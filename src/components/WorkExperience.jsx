@@ -1,6 +1,6 @@
 import React from 'react';
 import { workExperience } from '../data/portfolioData';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Sparkles, CheckCircle2 } from 'lucide-react';
 
 const WorkExperience = () => {
   return (
@@ -9,16 +9,20 @@ const WorkExperience = () => {
         
         {/* Section Heading */}
         <div className="text-center mb-16">
+          <span className="text-xs font-bold uppercase tracking-widest text-brand-orange block mb-2 font-mono">
+            CAREER & IMPACT MILESTONES
+          </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-[#111115] tracking-tight">
-            My <span className="text-brand-orange">Work Experince</span>
+            My <span className="text-brand-orange">Work Experience</span>
           </h2>
+          <div className="w-16 h-1 bg-gradient-to-r from-brand-orange to-amber-400 rounded-full mx-auto mt-4" />
         </div>
 
         {/* Timeline Table Container */}
         <div className="relative max-w-4xl mx-auto">
           
           {/* Vertical Central Line (Dashed/Dotted Track) */}
-          <div className="absolute left-1/2 top-4 bottom-4 -translate-x-1/2 w-[2px] border-l-2 border-dashed border-gray-300 z-0" />
+          <div className="absolute left-1/2 top-4 bottom-4 -translate-x-1/2 w-[2px] border-l-2 border-dashed border-gray-300 z-0 hidden md:block" />
 
           <div className="space-y-12 sm:space-y-16">
             {workExperience.map((exp, index) => {
@@ -29,6 +33,11 @@ const WorkExperience = () => {
                   
                   {/* Left Column: Role & Period */}
                   <div className="md:col-span-5 text-center md:text-right">
+                    <div className="inline-flex md:hidden items-center space-x-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold mb-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                      <span>Current Position</span>
+                    </div>
+
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900 group-hover:text-brand-orange transition-colors">
                       {exp.title}
                     </h3>
@@ -39,7 +48,7 @@ const WorkExperience = () => {
                   </div>
 
                   {/* Center Column: Dotted Node */}
-                  <div className="md:col-span-1 flex justify-center py-2 md:py-0">
+                  <div className="md:col-span-1 hidden md:flex justify-center py-2 md:py-0">
                     {isCurrent ? (
                       /* Active / Current Orange Gear/Sunburst Node */
                       <div className="relative flex items-center justify-center">
@@ -59,14 +68,30 @@ const WorkExperience = () => {
                   </div>
 
                   {/* Right Column: Company & Type */}
-                  <div className="md:col-span-5 text-center md:text-left bg-white md:bg-transparent p-4 md:p-0 rounded-2xl shadow-sm md:shadow-none border md:border-none border-gray-100">
-                    <h4 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      {exp.company}
-                    </h4>
-                    <p className="text-sm font-medium text-gray-500 mt-1 flex items-center justify-center md:justify-start gap-1.5">
-                      <MapPin size={14} className="text-brand-orange" />
-                      <span>{exp.type}</span>
+                  <div className="md:col-span-5 text-center md:text-left bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-200/80">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-1 mb-2">
+                      <h4 className="text-xl font-extrabold text-gray-900">
+                        {exp.company}
+                      </h4>
+                      <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 w-max mx-auto md:mx-0">
+                        {exp.type}
+                      </span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-3">
+                      {exp.description}
                     </p>
+
+                    {exp.achievements && (
+                      <div className="space-y-1.5 pt-2 border-t border-gray-100 text-left">
+                        {exp.achievements.map((ach, aIdx) => (
+                          <div key={aIdx} className="flex items-start space-x-2 text-xs text-gray-700">
+                            <CheckCircle2 size={13} className="text-brand-orange shrink-0 mt-0.5" />
+                            <span>{ach}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
 
                 </div>
