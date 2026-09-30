@@ -67,7 +67,7 @@ export const resumeData = {
     {
       title: "UI/UX Designer",
       company: "SwiftSBF",
-      location: "New York, USA (Remote)",
+      location: "346 Central Ave Suite 301, Lawrence, NY 11559",
       type: "Remote, Full-Time",
       period: "Sept 2024 – Present",
       bullets: [
@@ -137,7 +137,7 @@ export const workExperience = [
     title: "UI/UX Designer",
     period: "Sept 2024 – Present",
     company: "SwiftSBF",
-    location: "New York, USA (Remote)",
+    location: "346 Central Ave Suite 301, Lawrence, NY 11559",
     type: "Remote, Full-Time",
     roleFocus: "Lead Product & UI/UX Design",
     description: "Leading the end-to-end product design lifecycle for financial-services, SaaS web, and mobile experiences.",
