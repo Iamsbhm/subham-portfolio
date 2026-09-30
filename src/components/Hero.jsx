@@ -182,8 +182,8 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* ROW 2: CIRCULAR NODE + PILL + KUMAR */}
-          <div className="flex items-center justify-center sm:justify-start gap-2.5 sm:gap-4 -mt-1 sm:-mt-2 relative w-full">
+          {/* ROW 2: CIRCULAR NODE + PILL + KUMAR + BOXY SOCIAL PROFILES */}
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 sm:gap-4 -mt-1 sm:-mt-2 relative w-full">
             
             {/* Concentric Circle Node with Pill Connector */}
             <div className="flex items-center space-x-1.5 shrink-0 relative">
@@ -199,6 +199,53 @@ const Hero = () => {
             <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] font-black tracking-tighter uppercase leading-none text-[#111115]">
               KUMAR
             </h2>
+
+            {/* Boxy Interactive Social Profile Cards (Dribbble, Figma, LinkedIn) */}
+            <div className="flex items-center gap-2 sm:gap-2.5 ml-0 sm:ml-3 mt-2 sm:mt-0">
+              
+              {/* Dribbble Box */}
+              <a
+                href="https://dribbble.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="View Dribbble Profile"
+                className="group flex items-center space-x-1.5 bg-white hover:bg-[#EA4C89] border-2 border-[#111115] px-3 py-1.5 rounded-xl shadow-[3px_3px_0px_#111115] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all cursor-pointer text-[#111115] hover:text-white"
+              >
+                <svg className="w-4 h-4 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm10.198 11.026c-.035-.015-1.954-.78-4.004-.372.842 2.307 1.185 4.316 1.258 4.79 1.636-1.189 2.656-3.179 2.746-4.418zm-4.708 5.485c-.092-.544-.457-2.618-1.348-4.966-3.834 1.144-7.469 1.107-7.838 1.103.493 2.08 2.054 5.342 5.696 5.352 1.34 0 2.553-.497 3.49-1.489zm-10.49-4.22c.316.004 3.411.029 6.942-1.002-.572-1.229-1.225-2.457-1.96-3.649-3.211 1.252-4.908 4.331-4.982 4.651zm5.289-5.918c.704 1.143 1.332 2.32 1.884 3.499 2.637-.991 3.738-2.464 3.826-2.585-1.464-1.614-3.567-2.617-5.71-2.617-.678 0-1.333.102-1.954.296.657.404 1.312.871 1.954 1.407zm-7.289 2.627c.071-.122 1.543-2.588 4.415-3.791-.567-.478-1.147-.887-1.724-1.224-2.735 1.623-4.59 4.595-4.691 8.016.036-.017 1.688-.792 2-.991zm1.758 7.37c.073-.134 1.633-2.909 2.146-5.83-3.03.111-5.63 1.054-5.877 1.147.962 2.45 2.658 4.296 4.802 5.097 0-.138-.415-.811-1.071-.414z"/>
+                </svg>
+                <span className="text-xs font-black tracking-tight font-sans">Dribbble</span>
+              </a>
+
+              {/* Figma Box */}
+              <a
+                href="https://www.figma.com/@subham"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="View Figma Community / Profile"
+                className="group flex items-center space-x-1.5 bg-white hover:bg-[#0ACF83] border-2 border-[#111115] px-3 py-1.5 rounded-xl shadow-[3px_3px_0px_#111115] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all cursor-pointer text-[#111115] hover:text-white"
+              >
+                <svg className="w-4 h-4 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24">
+                  <path d="M8 24c2.208 0 4-1.792 4-4v-4H8c-2.208 0-4 1.792-4 4s1.792 4 4 4zM4 12c0-2.208 1.792-4 4-4h4v8H8c-2.208 0-4-1.792-4-4zm0-8c0-2.208 1.792-4 4-4h4v8H8C5.792 8 4 6.208 4 4zm8-4h4c2.208 0 4 1.792 4 4s-1.792 4-4 4h-4V0zm0 8h4c2.208 0 4 1.792 4 4s-1.792 4-4 4h-4V8z"/>
+                </svg>
+                <span className="text-xs font-black tracking-tight font-sans">Figma</span>
+              </a>
+
+              {/* LinkedIn Box */}
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="View LinkedIn Profile"
+                className="group flex items-center space-x-1.5 bg-white hover:bg-[#0A66C2] border-2 border-[#111115] px-3 py-1.5 rounded-xl shadow-[3px_3px_0px_#111115] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all cursor-pointer text-[#111115] hover:text-white"
+              >
+                <svg className="w-4 h-4 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span className="text-xs font-black tracking-tight font-sans">LinkedIn</span>
+              </a>
+
+            </div>
           </div>
 
           {/* ROW 3: VENN DIAGRAM + DESIGNER (OUTLINE) */}

@@ -19,6 +19,7 @@ export const personalInfo = {
   socials: [
     { name: "LinkedIn", url: "https://linkedin.com" },
     { name: "Dribbble", url: "https://dribbble.com" },
+    { name: "Figma", url: "https://www.figma.com/@subham" },
     { name: "Portfolio", url: "https://github.com/Iamsbhm/subham-portfolio" },
   ]
 };
