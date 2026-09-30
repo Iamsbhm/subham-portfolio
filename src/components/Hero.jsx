@@ -135,9 +135,9 @@ const Hero = () => {
         </div>
 
         {/* ========================================================
-            ICONIC EDITORIAL TYPOGRAPHY COMPOSITION (Tight & Connected)
+            ICONIC EDITORIAL TYPOGRAPHY COMPOSITION (Exact Reference Match)
             ======================================================== */}
-        <div className="max-w-3xl lg:max-w-4xl mx-auto text-[#111115] relative flex flex-col items-center sm:items-start pl-0 sm:pl-4 lg:pl-10">
+        <div className="max-w-4xl mx-auto text-[#111115] relative flex flex-col items-center sm:items-start pl-0 sm:pl-4 lg:pl-8">
           
           {/* Floating Figma Cursor Doodle */}
           <div className="absolute -top-6 -left-6 hidden md:flex items-center space-x-1 pointer-events-none">
@@ -148,8 +148,8 @@ const Hero = () => {
           </div>
 
           {/* ROW 1: SUBHAM + TOGGLE SWITCH + CONNECTING RIGHT WIRE */}
-          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-5 relative w-full">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] font-black tracking-tighter uppercase leading-[0.9] text-[#111115]">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-6 relative w-full">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] font-black tracking-tighter uppercase leading-none text-[#111115]">
               SUBHAM
             </h1>
 
@@ -165,14 +165,14 @@ const Hero = () => {
 
               <button
                 onClick={() => setIsToggleActive(!isToggleActive)}
-                className="relative w-24 sm:w-32 md:w-40 h-11 sm:h-14 md:h-16 rounded-full border-2 border-[#111115] bg-[#EDE6D4] p-1 transition-all duration-300 focus:outline-none cursor-pointer flex items-center shadow-inner hover:scale-105"
+                className="relative w-24 sm:w-32 md:w-36 h-12 sm:h-14 md:h-16 rounded-full border-2 border-[#111115] bg-[#EDE6D4] p-1 transition-all duration-300 focus:outline-none cursor-pointer flex items-center shadow-inner hover:scale-105"
                 aria-label="Toggle Mode"
                 title="Click to toggle UI / UX!"
               >
                 <div
-                  className={`w-8 sm:w-11 md:w-13 h-8 sm:h-11 md:h-13 rounded-full border-2 border-[#111115] shadow-md transition-all duration-300 flex items-center justify-center font-bold text-xs sm:text-sm ${
+                  className={`w-9 sm:w-11 md:w-13 h-9 sm:h-11 md:h-13 rounded-full border-2 border-[#111115] shadow-md transition-all duration-300 flex items-center justify-center font-bold text-xs sm:text-sm ${
                     isToggleActive
-                      ? 'translate-x-12 sm:translate-x-17 md:translate-x-22 bg-brand-orange text-white border-brand-orange'
+                      ? 'translate-x-11 sm:translate-x-17 md:translate-x-19 bg-brand-orange text-white border-brand-orange'
                       : 'translate-x-0 bg-[#FAF6EC] text-[#111115]'
                   }`}
                 >
@@ -180,64 +180,65 @@ const Hero = () => {
                 </div>
               </button>
 
-              {/* Dashed connector wire looping from right of toggle down toward row 2 */}
-              <svg className="hidden md:block absolute left-full top-1/2 -translate-y-1/2 w-28 lg:w-36 h-20 pointer-events-none" viewBox="0 0 120 70" fill="none">
-                <path d="M 0 35 H 85 Q 105 35 105 50 V 70" stroke="#111115" strokeWidth="2" strokeDasharray="4 4" />
+              {/* Top Dashed Connector Wire looping down toward Row 2 */}
+              <svg className="hidden lg:block absolute left-full top-1/2 -translate-y-1/2 w-36 xl:w-44 h-24 pointer-events-none z-0" viewBox="0 0 160 90" fill="none">
+                <path d="M 0 35 H 120 Q 145 35 145 60 V 90" stroke="#111115" strokeWidth="2" strokeDasharray="5 5" />
               </svg>
             </div>
           </div>
 
           {/* ROW 2: CIRCULAR NODE + PILL + KUMAR + RIGHT DASHED LINE */}
-          <div className="flex items-center justify-center sm:justify-start gap-2 sm:gap-4 -mt-1 sm:-mt-2 relative w-full">
+          <div className="flex items-center justify-center sm:justify-start gap-2.5 sm:gap-4 -mt-1 sm:-mt-2 relative w-full">
             
             {/* Concentric Circle Node with Pill Connector */}
             <div className="flex items-center space-x-1.5 shrink-0 relative">
-              <div className="w-10 sm:w-12 md:w-14 h-10 sm:h-12 md:h-14 rounded-full border-2 border-[#111115] flex items-center justify-center bg-transparent">
-                <div className="w-3 sm:w-3.5 md:w-4 h-3 sm:h-3.5 md:h-4 rounded-full border-2 border-[#111115] bg-transparent" />
+              <div className="w-11 sm:w-13 md:w-15 h-11 sm:h-13 md:h-15 rounded-full border-2 border-[#111115] flex items-center justify-center bg-transparent">
+                <div className="w-3.5 sm:w-4 md:w-4.5 h-3.5 sm:h-4 md:h-4.5 rounded-full border-2 border-[#111115] bg-transparent" />
               </div>
 
               {/* Capsule connector */}
-              <div className="w-6 sm:w-8 md:w-10 h-3.5 sm:h-5 md:h-6 rounded-full border-2 border-[#111115] bg-transparent" />
+              <div className="w-6 sm:w-8 md:w-10 h-4 sm:h-5 md:h-6 rounded-full border-2 border-[#111115] bg-transparent" />
 
-              {/* Dashed wire dropping from bottom of node into Venn diagram in row 3 */}
-              <svg className="hidden sm:block absolute top-full left-5 w-12 h-14 pointer-events-none" viewBox="0 0 50 60" fill="none">
-                <path d="M 5 0 V 35 Q 5 50 25 50 H 45" stroke="#111115" strokeWidth="2" strokeDasharray="4 4" />
+              {/* Vertical Dashed wire dropping directly into the Venn diagram below */}
+              <svg className="hidden sm:block absolute top-full left-5.5 sm:left-6.5 w-6 h-12 pointer-events-none" viewBox="0 0 20 40" fill="none">
+                <path d="M 10 0 V 40" stroke="#111115" strokeWidth="2" strokeDasharray="4 4" />
               </svg>
             </div>
 
             {/* Text: KUMAR */}
-            <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] font-black tracking-tighter uppercase leading-[0.9] text-[#111115]">
+            <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] font-black tracking-tighter uppercase leading-none text-[#111115]">
               KUMAR
             </h2>
 
-            {/* Horizontal Dashed Line to Right (Matching user reference) */}
-            <div className="hidden md:flex flex-1 items-center ml-2">
-              <svg className="w-full h-3" viewBox="0 0 200 6" fill="none">
-                <line x1="0" y1="3" x2="200" y2="3" stroke="#111115" strokeWidth="2" strokeDasharray="4 4" />
+            {/* Horizontal Dashed Line to Right */}
+            <div className="hidden lg:flex flex-1 items-center ml-2 relative">
+              <svg className="w-full h-4" viewBox="0 0 220 10" fill="none">
+                <line x1="0" y1="5" x2="220" y2="5" stroke="#111115" strokeWidth="2" strokeDasharray="5 5" />
               </svg>
             </div>
           </div>
 
           {/* ROW 3: VENN DIAGRAM + DESIGNER (OUTLINE) */}
-          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 sm:gap-4 -mt-1 sm:-mt-2 relative w-full">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-5 mt-1 sm:mt-2 relative w-full">
             
             {/* Interlocking Venn Diagram Circles with Crosshair */}
-            <div className="relative w-18 sm:w-24 md:w-30 h-10 sm:h-14 md:h-18 flex items-center justify-center shrink-0">
-              <svg className="w-full h-full" viewBox="0 0 120 70" fill="none">
-                <circle cx="40" cy="35" r="26" stroke="#111115" strokeWidth="2" />
-                <circle cx="80" cy="35" r="26" stroke="#111115" strokeWidth="2" />
-                <line x1="20" y1="35" x2="100" y2="35" stroke="#111115" strokeWidth="2" />
+            <div className="relative w-20 sm:w-24 md:w-28 h-12 sm:h-14 md:h-16 flex items-center justify-center shrink-0">
+              <svg className="w-full h-full" viewBox="0 0 130 80" fill="none">
+                <circle cx="45" cy="40" r="30" stroke="#111115" strokeWidth="2" />
+                <circle cx="85" cy="40" r="30" stroke="#111115" strokeWidth="2" />
+                <line x1="20" y1="40" x2="110" y2="40" stroke="#111115" strokeWidth="2" />
               </svg>
             </div>
 
             {/* Outline 'Designer' with 'creative' label */}
-            <div className="relative inline-block">
-              <span className="absolute -top-2.5 sm:-top-4 md:-top-5 right-1 text-xs sm:text-base md:text-lg font-extrabold text-[#111115] tracking-tight lowercase italic">
+            <div className="relative inline-block pt-1">
+              {/* Floating 'creative' label positioned on top of the right letters with clean breathing room */}
+              <span className="absolute -top-4 sm:-top-5 md:-top-6 right-3 text-sm sm:text-lg md:text-xl font-extrabold text-[#111115] tracking-tight lowercase italic">
                 creative
               </span>
 
               <span
-                className="font-black italic tracking-tight text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] block leading-[0.9] select-none text-transparent"
+                className="font-black italic tracking-tight text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] block leading-none select-none text-transparent"
                 style={{
                   WebkitTextStroke: '2.5px #111115',
                 }}
