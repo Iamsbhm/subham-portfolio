@@ -138,9 +138,36 @@ const Hero = () => {
             <br className="hidden sm:inline" /> {personalInfo.role}
           </h1>
 
-          <p className="text-sm sm:text-base text-gray-600 mt-4 max-w-xl mx-auto leading-relaxed">
-            {personalInfo.bio}
-          </p>
+          {/* Redesigned Hero Value Proposition & Specialty Tags */}
+          <div className="mt-5 max-w-2xl mx-auto space-y-3.5">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-center">
+              Product-focused <span className="text-gray-950 font-bold">UI/UX Designer</span> with{' '}
+              <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-brand-orange/10 text-brand-orange font-bold text-xs sm:text-sm">
+                2+ years experience
+              </span>{' '}
+              crafting intuitive <span className="text-gray-950 font-bold">Fintech, SaaS & Mobile</span> experiences. Specializing in human-centered research, scalable <span className="text-gray-950 font-bold">design systems</span>, and measurable conversion growth.
+            </p>
+
+            {/* Core Capability Chips */}
+            <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white border border-gray-200/90 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                <span>Fintech & SaaS UX</span>
+              </span>
+              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white border border-gray-200/90 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange" />
+                <span>Design Systems (Figma)</span>
+              </span>
+              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white border border-gray-200/90 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                <span>Mobile & Responsive Web</span>
+              </span>
+              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white border border-gray-200/90 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
+                <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
+                <span>WCAG 2.1 AA Accessibility</span>
+              </span>
+            </div>
+          </div>
 
           {/* Quick CTAs for Hiring Managers */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
