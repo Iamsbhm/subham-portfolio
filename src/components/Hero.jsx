@@ -230,11 +230,11 @@ const Hero = () => {
               </svg>
             </div>
 
-            {/* Outline 'Designer' with 'creative' label */}
+            {/* Outline 'Designer' with 'product' label */}
             <div className="relative inline-block pt-1">
-              {/* Floating 'creative' label positioned on top of the right letters with clean breathing room */}
+              {/* Floating 'product' label positioned on top of the right letters with clean breathing room */}
               <span className="absolute -top-4 sm:-top-5 md:-top-6 right-3 text-sm sm:text-lg md:text-xl font-extrabold text-[#111115] tracking-tight lowercase italic">
-                creative
+                product
               </span>
 
               <span
