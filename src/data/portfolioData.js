@@ -77,6 +77,19 @@ export const resumeData = {
         "Embedded responsive behavior, WCAG 2.1 accessibility principles, inclusive design practices, and micro-interactions into desktop and mobile experiences to support consistent behavior across breakpoints.",
         "Coordinated cross-functional delivery across product, engineering, and business teams in Agile/Scrum workflows, facilitating design critiques and reviews, documenting decisions, resolving implementation questions, and incorporating structured feedback into subsequent iterations."
       ]
+    },
+    {
+      title: "User Experience Designer",
+      company: "plade - A Fantasy Trading App",
+      location: "Remote",
+      type: "Internship",
+      period: "May 2024 – Aug 2024",
+      bullets: [
+        "Designed mobile app interfaces and high-fidelity interactive prototypes in Figma for fantasy stock trading competitions and portfolio tracking.",
+        "Conducted competitive benchmarking and user journey mapping across 5+ trading and gaming platforms to streamline fantasy draft and trade execution flows.",
+        "Created scalable component libraries and design tokens optimized for iOS & Android dark/light mode interfaces.",
+        "Collaborated closely with founders and front-end developers to deliver production-ready design specs, user flows, and interactive micro-animations."
+      ]
     }
   ],
   projects: [
@@ -148,6 +161,23 @@ export const workExperience = [
       "Established a scalable Figma component library containing 60+ reusable elements across forms, buttons, modals, charts, tables, icons, and alerts, increasing interface consistency across product and growth initiatives.",
       "Embedded responsive behavior, WCAG 2.1 AA accessibility standards, inclusive design practices, and micro-interactions into desktop and mobile experiences to ensure consistent usability across all breakpoints.",
       "Coordinated cross-functional delivery across product, engineering, and business teams in Agile/Scrum workflows, facilitating design critiques, documenting rationale, and resolving front-end implementation queries."
+    ]
+  },
+  {
+    id: 2,
+    title: "User Experience Designer",
+    period: "May 2024 – Aug 2024",
+    company: "plade",
+    location: "Remote",
+    type: "Internship",
+    roleFocus: "Fantasy Trading Mobile Experience",
+    description: "Designed engaging user journeys and gamified trading interaction patterns for plade — A Fantasy Trading App.",
+    impactTags: ["Gamification UX", "Mobile Prototyping", "User Research", "Trading Mechanics", "Interaction Design"],
+    achievements: [
+      "Designed intuitive mobile app interfaces and high-fidelity interactive prototypes in Figma for fantasy stock trading competitions and portfolio tracking.",
+      "Conducted competitive benchmarking and user journey mapping across 5+ trading and gaming platforms to streamline fantasy draft and trade execution flows.",
+      "Created scalable component libraries and design tokens optimized for iOS & Android dark/light mode interfaces.",
+      "Collaborated closely with founders and front-end developers to deliver production-ready design specs, user flows, and interactive micro-animations."
     ]
   }
 ];

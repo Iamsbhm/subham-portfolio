@@ -40,10 +40,16 @@ const WorkExperience = () => {
                   
                   {/* Left Column: Role & Period */}
                   <div className="md:col-span-5 text-center md:text-right">
-                    <div className="inline-flex md:hidden items-center space-x-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold mb-2">
-                      <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                      <span>Current Position</span>
-                    </div>
+                    {isCurrent ? (
+                      <div className="inline-flex md:hidden items-center space-x-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold mb-2">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        <span>Current Position</span>
+                      </div>
+                    ) : (
+                      <div className="inline-flex md:hidden items-center space-x-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold mb-2">
+                        <span>{exp.type}</span>
+                      </div>
+                    )}
 
                     <h3 className="text-2xl sm:text-3xl font-black text-[#111115] group-hover:text-brand-orange transition-colors tracking-tight">
                       {exp.title}
@@ -84,9 +90,11 @@ const WorkExperience = () => {
                         </div>
                       </div>
                     ) : (
-                      /* Past Node */
-                      <div className="w-8 h-8 rounded-full bg-white border-2 border-gray-800 flex items-center justify-center shadow-sm group-hover:border-brand-orange transition-colors">
-                        <div className="w-3.5 h-3.5 rounded-full bg-gray-800 group-hover:bg-brand-orange transition-colors" />
+                      /* Past Internship Node */
+                      <div className="w-9 h-9 rounded-full bg-white border-2 border-[#111115] flex items-center justify-center shadow-sm group-hover:border-brand-orange transition-colors">
+                        <div className="w-4 h-4 rounded-full bg-[#111115] group-hover:bg-brand-orange transition-colors flex items-center justify-center">
+                          <div className="w-1.5 h-1.5 rounded-full bg-white" />
+                        </div>
                       </div>
                     )}
                   </div>
@@ -112,8 +120,12 @@ const WorkExperience = () => {
                           {exp.roleFocus || "Product Design"}
                         </span>
                       </div>
-                      <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 flex items-center gap-1.5 shadow-2xs">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                      <span className={`text-xs font-bold px-3 py-1 rounded-full border flex items-center gap-1.5 shadow-2xs ${
+                        isCurrent
+                          ? 'text-emerald-700 bg-emerald-50 border-emerald-200'
+                          : 'text-blue-700 bg-blue-50 border-blue-200'
+                      }`}>
+                        {isCurrent && <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />}
                         {exp.type}
                       </span>
                     </div>
