@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, ArrowRight, MousePointer2, Download, Layers, PenTool, CheckCircle2 } from 'lucide-react';
+import { Sparkles, ArrowRight, MousePointer2, Download, Layers, PenTool, CheckCircle2, TrendingUp, Check, Eye } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Hero = () => {
@@ -19,31 +19,101 @@ const Hero = () => {
     <section id="home" className="relative pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden bg-[#FAF6EC] select-none">
       
       {/* ========================================================
-          BACKGROUND VECTOR ACCENTS & DESIGN TOKENS
+          LEFT SIDE DOODLES & BLUEPRINT DESIGN ARTIFACTS
           ======================================================== */}
       
-      {/* Top Left Subtle Bezier Pen Accent */}
-      <div className="absolute top-16 left-6 hidden lg:flex items-center space-x-2 pointer-events-none opacity-70">
-        <svg className="w-16 h-12 text-brand-orange/60" viewBox="0 0 80 60" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-          <path d="M10 50 C 20 15, 50 50, 70 15" strokeDasharray="3 3" />
-          <circle cx="10" cy="50" r="3" fill="white" stroke="#FF5E2B" strokeWidth="1.5" />
-          <circle cx="70" cy="15" r="3" fill="#FF5E2B" />
+      {/* Left Doodle 1: Top-Left Bezier Pen Curve & Token */}
+      <div className="absolute top-14 left-4 xl:left-12 hidden lg:flex items-center space-x-2 pointer-events-none opacity-85 hover:opacity-100 transition-opacity">
+        <svg className="w-20 h-14 text-brand-orange/70" viewBox="0 0 90 60" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+          <path d="M10 50 C 25 10, 60 50, 80 15" strokeDasharray="3 3" />
+          <circle cx="10" cy="50" r="3.5" fill="white" stroke="#FF5E2B" strokeWidth="2" />
+          <circle cx="80" cy="15" r="3.5" fill="#FF5E2B" />
+          <line x1="80" y1="15" x2="60" y2="35" stroke="#FF5E2B" strokeWidth="1.5" />
         </svg>
-        <span className="text-[10px] font-mono text-gray-500 font-bold -rotate-6 bg-white/80 px-2 py-0.5 rounded border border-gray-200">
+        <div className="bg-white/95 backdrop-blur-xs border border-brand-orange/30 text-brand-orange px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold shadow-xs -rotate-6">
           ❖ design-tokens.fig
-        </span>
+        </div>
       </div>
 
-      {/* Top Right Mini Wireframe Doodle */}
-      <div className="absolute top-16 right-8 hidden lg:flex flex-col items-center pointer-events-none opacity-80 rotate-6">
-        <div className="bg-white/90 p-2 rounded-xl border border-dashed border-gray-300 shadow-sm space-y-1 w-20">
-          <div className="w-full h-1.5 bg-brand-orange/40 rounded" />
+      {/* Left Doodle 2: Mid-Left Color Palette Token Swatches */}
+      <div className="absolute top-1/2 -translate-y-20 left-4 xl:left-12 hidden xl:flex flex-col space-y-1.5 pointer-events-none opacity-85">
+        <div className="bg-white/90 backdrop-blur-xs p-2.5 rounded-2xl border border-gray-300 shadow-xs space-y-2 -rotate-3">
+          <div className="flex items-center justify-between space-x-2 pb-1 border-b border-gray-200">
+            <span className="text-[9px] font-mono font-bold text-gray-600">🎨 UI Palette</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+          </div>
+          <div className="flex space-x-1.5">
+            <div className="w-5 h-5 rounded-md bg-[#10B981] shadow-xs" title="Emerald Primary" />
+            <div className="w-5 h-5 rounded-md bg-[#FF5E2B] shadow-xs" title="Brand Orange" />
+            <div className="w-5 h-5 rounded-md bg-[#3B82F6] shadow-xs" title="Travel Blue" />
+            <div className="w-5 h-5 rounded-md bg-[#111115] shadow-xs" title="Dark Canvas" />
+          </div>
+          <span className="text-[8px] font-mono text-gray-500 block text-center">Auto-Layout: 8px Soft Grid</span>
+        </div>
+      </div>
+
+      {/* Left Doodle 3: Lower-Left Hand-Drawn Arrow pointing to CTA */}
+      <div className="absolute bottom-28 left-6 xl:left-16 hidden lg:flex flex-col items-start pointer-events-none opacity-85">
+        <span className="text-[11px] font-bold font-sans text-brand-orange rotate-6 mb-1">
+          ✦ 100% User-Validated
+        </span>
+        <svg className="w-16 h-12 text-brand-orange rotate-12" viewBox="0 0 60 50" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+          <path d="M10 10 Q 30 35, 50 35" />
+          <path d="M40 28 L 50 35 L 42 42" />
+        </svg>
+      </div>
+
+      {/* ========================================================
+          RIGHT SIDE DOODLES & BLUEPRINT DESIGN ARTIFACTS
+          ======================================================== */}
+      
+      {/* Right Doodle 1: Top-Right Low-Fi Wireframe Component */}
+      <div className="absolute top-14 right-4 xl:right-12 hidden lg:flex flex-col items-center pointer-events-none opacity-85 rotate-6">
+        <div className="bg-white/90 backdrop-blur-xs p-2.5 rounded-2xl border-2 border-dashed border-gray-300 shadow-xs space-y-1.5 w-24">
+          <div className="flex items-center justify-between">
+            <div className="w-10 h-1.5 bg-brand-orange/40 rounded" />
+            <span className="text-[8px] font-mono text-gray-400">v2.4</span>
+          </div>
           <div className="flex space-x-1">
-            <div className="w-1/3 h-5 bg-gray-200 rounded" />
-            <div className="w-2/3 h-5 bg-gray-100 rounded" />
+            <div className="w-1/3 h-6 bg-gray-200 rounded" />
+            <div className="w-2/3 h-6 bg-gray-100 rounded space-y-1 p-0.5">
+              <div className="w-full h-1 bg-gray-300 rounded" />
+              <div className="w-3/4 h-1 bg-gray-200 rounded" />
+            </div>
           </div>
         </div>
-        <span className="text-[9px] font-mono text-gray-400 mt-0.5">Wireframe</span>
+        <span className="text-[9px] font-mono text-gray-500 font-semibold mt-1">Wireframe ➔ Prototype</span>
+      </div>
+
+      {/* Right Doodle 2: Mid-Right Verified Impact Sparkline Card */}
+      <div className="absolute top-1/2 -translate-y-20 right-4 xl:right-12 hidden xl:flex flex-col pointer-events-none opacity-85">
+        <div className="bg-white/95 backdrop-blur-xs p-3 rounded-2xl border border-gray-300 shadow-xs space-y-1.5 rotate-3">
+          <div className="flex items-center justify-between space-x-2">
+            <span className="text-[9px] font-mono font-bold text-gray-500 uppercase">A/B Testing</span>
+            <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+              Verified ✓
+            </span>
+          </div>
+          <div className="flex items-baseline space-x-1.5">
+            <span className="text-lg font-black text-brand-orange font-mono">+38.4%</span>
+            <span className="text-[9px] text-gray-600 font-medium">Conversion Lift</span>
+          </div>
+          {/* Sparkline mini wave */}
+          <svg className="w-24 h-5 text-emerald-500" viewBox="0 0 100 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <path d="M 0 15 Q 25 18, 40 10 T 70 8 T 100 2" />
+          </svg>
+        </div>
+      </div>
+
+      {/* Right Doodle 3: Lower-Right Curved Arrow pointing to Contact CTA */}
+      <div className="absolute bottom-28 right-6 xl:right-16 hidden lg:flex flex-col items-end pointer-events-none opacity-85">
+        <span className="text-[11px] font-bold font-sans text-brand-orange -rotate-6 mb-1">
+          Let's talk design! 💬
+        </span>
+        <svg className="w-16 h-12 text-brand-orange -scale-x-100 rotate-12" viewBox="0 0 60 50" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+          <path d="M10 10 Q 30 35, 50 35" />
+          <path d="M40 28 L 50 35 L 42 42" />
+        </svg>
       </div>
 
       {/* ========================================================
@@ -51,7 +121,7 @@ const Hero = () => {
           ======================================================== */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Availability & Hello Badge (Tightened top spacing) */}
+        {/* Availability & Hello Badge */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 mb-5 relative">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-100/90 border border-emerald-300 text-emerald-900 text-[11px] font-bold tracking-wide shadow-xs">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
@@ -69,11 +139,11 @@ const Hero = () => {
             ======================================================== */}
         <div className="max-w-3xl lg:max-w-4xl mx-auto text-[#111115] relative flex flex-col items-center sm:items-start pl-0 sm:pl-4 lg:pl-10">
           
-          {/* Floating Figma Cursor Doodle attached near the header */}
+          {/* Floating Figma Cursor Doodle */}
           <div className="absolute -top-6 -left-6 hidden md:flex items-center space-x-1 pointer-events-none">
             <MousePointer2 size={16} className="text-brand-orange fill-brand-orange rotate-12" />
-            <span className="bg-brand-orange text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow">
-              Subham
+            <span className="bg-brand-orange text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow-xs">
+              Subham • Lead UX
             </span>
           </div>
 
@@ -86,7 +156,7 @@ const Hero = () => {
             {/* Interactive Toggle Switch */}
             <div className="relative flex items-center">
               
-              {/* Playful Hand-Drawn Arrow annotation pointing to toggle */}
+              {/* Playful Hand-Drawn Annotation Arrow */}
               <div className="absolute -top-6 left-1/2 -translate-x-1/2 hidden sm:flex items-center space-x-1 pointer-events-none">
                 <span className="text-[10px] font-bold font-sans text-brand-orange -rotate-6">
                   {isToggleActive ? 'UX Mode ⚡' : 'Click Toggle! 💡'}
