@@ -259,16 +259,9 @@ const Hero = () => {
         </div>
 
         {/* ========================================================
-            HERO VALUE PROPOSITION & SPECIALTY TAGS (Tightened Spacing)
+            HERO SPECIALTY TAGS & CTAS
             ======================================================== */}
-        <div className="max-w-2xl mx-auto space-y-3.5 text-center mt-5">
-          <p className="text-xs sm:text-sm md:text-base text-gray-800 leading-relaxed font-normal max-w-xl mx-auto">
-            Product-focused <span className="text-gray-950 font-extrabold">UI/UX Designer</span> with{' '}
-            <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-brand-orange/10 text-brand-orange font-bold text-xs">
-              2+ years experience
-            </span>{' '}
-            crafting intuitive <span className="text-gray-950 font-extrabold">Fintech, SaaS & Mobile</span> ecosystems. Driven by user research, scalable <span className="text-gray-950 font-extrabold">design systems</span>, and measurable conversion growth.
-          </p>
+        <div className="max-w-2xl mx-auto space-y-4 text-center mt-6">
 
           {/* Core Capability Chips */}
           <div className="flex flex-wrap items-center justify-center gap-1.5 pt-0.5">
