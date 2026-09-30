@@ -137,11 +137,15 @@ export const workExperience = [
     period: "Sept 2024 – Present",
     company: "SwiftSBF",
     type: "Remote, Full-Time",
-    description: "Leading the end-to-end product design lifecycle for financial-services web and mobile experiences.",
+    roleFocus: "Lead Product & UI/UX Design",
+    description: "Leading the end-to-end product design lifecycle for financial-services, SaaS web, and mobile experiences.",
+    impactTags: ["Figma Systems", "WCAG 2.1 AA", "Fintech UX", "Handoff Time -30%", "Agile/Scrum"],
     achievements: [
-      "Converted user needs and business requirements into user flows, wireframes, prototypes, and Figma specifications; shortened handoff time by 30%.",
-      "Analyzed navigation, content hierarchy, task paths, and interaction patterns to uncover friction points.",
-      "Established a scalable Figma component library containing 60+ reusable elements across forms, buttons, modals, charts, tables, icons, and alerts."
+      "Converted user needs and business requirements into user flows, wireframes, prototypes, responsive screens, and implementation-ready Figma specifications; shortened design-to-development handoff time by 30%.",
+      "Analyzed navigation, content hierarchy, task paths, and interaction patterns to uncover friction points, translating findings into iterative solutions that improved product clarity and reduced UI-related support issues.",
+      "Established a scalable Figma component library containing 60+ reusable elements across forms, buttons, modals, charts, tables, icons, and alerts, increasing interface consistency across product and growth initiatives.",
+      "Embedded responsive behavior, WCAG 2.1 AA accessibility standards, inclusive design practices, and micro-interactions into desktop and mobile experiences to ensure consistent usability across all breakpoints.",
+      "Coordinated cross-functional delivery across product, engineering, and business teams in Agile/Scrum workflows, facilitating design critiques, documenting rationale, and resolving front-end implementation queries."
     ]
   }
 ];
