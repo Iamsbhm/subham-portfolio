@@ -97,10 +97,18 @@ const WorkExperience = () => {
                     {/* Header */}
                     <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-100">
                       <div>
-                        <h4 className="text-xl sm:text-2xl font-black text-[#111115] tracking-tight">
-                          {exp.company}
-                        </h4>
-                        <span className="text-xs font-semibold text-brand-orange">
+                        <div className="flex items-center gap-2">
+                          <h4 className="text-xl sm:text-2xl font-black text-[#111115] tracking-tight">
+                            {exp.company}
+                          </h4>
+                          {exp.location && (
+                            <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md">
+                              <MapPin size={11} className="text-brand-orange" />
+                              <span>{exp.location}</span>
+                            </span>
+                          )}
+                        </div>
+                        <span className="text-xs font-semibold text-brand-orange block mt-0.5">
                           {exp.roleFocus || "Product Design"}
                         </span>
                       </div>

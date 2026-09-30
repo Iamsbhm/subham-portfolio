@@ -145,7 +145,10 @@ const ResumeModal = ({ onClose }) => {
                     <div>
                       <h3 className="text-base font-bold text-gray-950">{exp.title}</h3>
                       <span className="text-sm font-semibold text-brand-orange">{exp.company}</span>
-                      <span className="text-xs text-gray-500 ml-2">({exp.type})</span>
+                      {exp.location && (
+                        <span className="text-xs text-gray-600 font-medium ml-2">• {exp.location}</span>
+                      )}
+                      <span className="text-xs text-gray-500 ml-1.5">({exp.type})</span>
                     </div>
                     <span className="text-xs font-semibold text-gray-600 bg-gray-100 px-3 py-1 rounded-full w-max">
                       {exp.period}
