@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Sparkles, ArrowRight, MousePointer2, Layers, PenTool, LayoutGrid, Download } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Hero = () => {
+  const [isToggleActive, setIsToggleActive] = useState(false);
+
   const scrollToCaseStudy = () => {
     const el = document.getElementById('case-study');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -14,166 +16,184 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-[#FAF9F6] select-none">
+    <section id="home" className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-[#FAF6EC] select-none">
       
       {/* ========================================================
           BACKGROUND DESIGN DOODLES & VECTOR ACCENTS
           ======================================================== */}
       
-      {/* Doodle 1: Top-Left Bezier Pen Curve & Component Token */}
-      <div className="absolute top-24 left-6 sm:left-16 lg:left-24 hidden md:flex items-center space-x-2 pointer-events-none opacity-80 hover:opacity-100 transition-opacity">
-        <svg className="w-24 h-20 text-brand-orange/60" viewBox="0 0 100 80" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-          {/* S-curve bezier */}
+      {/* Doodle 1: Top-Left Bezier Pen Curve */}
+      <div className="absolute top-20 left-4 sm:left-12 lg:left-16 hidden md:flex items-center space-x-2 pointer-events-none opacity-80">
+        <svg className="w-20 h-16 text-brand-orange/60" viewBox="0 0 100 80" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
           <path d="M10 70 C 20 20, 60 70, 90 20" strokeDasharray="4 4" />
-          {/* Anchor handle */}
           <circle cx="10" cy="70" r="4" fill="white" stroke="#FF5E2B" strokeWidth="2" />
           <circle cx="90" cy="20" r="4" fill="#FF5E2B" />
-          <line x1="90" y1="20" x2="70" y2="40" stroke="#FF5E2B" strokeWidth="1.5" />
         </svg>
-        <div className="bg-white/90 border border-brand-orange/40 text-brand-orange px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold shadow-sm -rotate-6">
-          ❖ design-tokens.fig
+      </div>
+
+      {/* Doodle 2: Mid-Left Floating Figma Cursor */}
+      <div className="absolute top-1/2 -translate-y-8 left-3 sm:left-8 lg:left-12 hidden lg:flex items-center space-x-1.5 pointer-events-none animate-bounce" style={{ animationDuration: '4s' }}>
+        <MousePointer2 size={18} className="text-brand-orange fill-brand-orange" />
+        <div className="bg-brand-orange text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-md">
+          Subham • Lead Designer
         </div>
-      </div>
-
-      {/* Doodle 2: Top-Right Wireframe Layout Doodle */}
-      <div className="absolute top-28 right-6 sm:right-16 lg:right-24 hidden md:flex flex-col items-center pointer-events-none opacity-85">
-        <div className="relative bg-white/80 backdrop-blur-sm p-3 rounded-2xl border-2 border-dashed border-gray-300 shadow-sm rotate-6 hover:rotate-0 transition-transform">
-          {/* Mini Wireframe Sketch */}
-          <div className="w-24 h-16 rounded-lg bg-gray-50 border border-gray-200 p-1.5 space-y-1">
-            <div className="w-full h-2 bg-brand-orange/30 rounded" />
-            <div className="flex space-x-1">
-              <div className="w-1/3 h-8 bg-gray-200 rounded" />
-              <div className="w-2/3 h-8 bg-gray-100 rounded space-y-1 p-0.5">
-                <div className="w-full h-1 bg-gray-300 rounded" />
-                <div className="w-3/4 h-1 bg-gray-200 rounded" />
-              </div>
-            </div>
-          </div>
-          {/* Sparkle doodle next to wireframe */}
-          <svg className="absolute -top-3 -right-3 w-6 h-6 text-brand-orange animate-spin" style={{ animationDuration: '8s' }} viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
-          </svg>
-        </div>
-        <span className="text-[10px] font-mono text-gray-400 mt-1 font-semibold">Low-Fi Wireframe</span>
-      </div>
-
-      {/* Doodle 3: Mid-Left Floating Figma Cursor */}
-      <div className="absolute top-1/2 -translate-y-12 left-4 sm:left-12 lg:left-20 hidden lg:flex items-center space-x-1.5 pointer-events-none animate-bounce" style={{ animationDuration: '4s' }}>
-        <MousePointer2 size={20} className="text-brand-orange fill-brand-orange" />
-        <div className="bg-brand-orange text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow-md">
-          Subham • UX Lead
-        </div>
-      </div>
-
-      {/* Doodle 4: Mid-Right Hand-Drawn Curved Arrow pointing to CTA */}
-      <div className="absolute top-1/2 -translate-y-4 right-4 sm:right-12 lg:right-28 hidden lg:flex flex-col items-center pointer-events-none opacity-85">
-        <span className="text-xs font-bold font-sans text-brand-orange -rotate-12 mb-1">
-          Explore Case Study! 🚀
-        </span>
-        <svg className="w-16 h-16 text-brand-orange -scale-x-100 rotate-45" viewBox="0 0 50 50" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-          <path d="M10 10 Q 30 15, 35 40" />
-          <path d="M28 35 L 35 40 L 40 32" />
-        </svg>
-      </div>
-
-      {/* Doodle 5: Playful Scribble Star Bursts near bottom */}
-      <div className="absolute bottom-24 left-8 hidden sm:block pointer-events-none text-brand-orange/40">
-        <svg className="w-10 h-10" viewBox="0 0 50 50" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-          <path d="M25 5 L 25 45" />
-          <path d="M5 25 L 45 25" />
-          <path d="M10 10 L 40 40" />
-          <path d="M10 40 L 40 10" />
-        </svg>
-      </div>
-
-      {/* Doodle 6: Spiral doodle near bottom right */}
-      <div className="absolute bottom-24 right-8 hidden sm:block pointer-events-none text-brand-orange/40">
-        <svg className="w-12 h-12" viewBox="0 0 50 50" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-          <path d="M25 25 m -20 0 a 20 20 0 1 0 40 0 a 15 15 0 1 0 -30 0 a 10 10 0 1 0 20 0 a 5 5 0 1 0 -10 0" />
-        </svg>
       </div>
 
       {/* ========================================================
-          HERO MAIN CONTENT
+          HERO MAIN CONTAINER
           ======================================================== */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Availability & Hello Badge */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6 relative">
-          
-          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold tracking-wide shadow-sm">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 relative">
+          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-emerald-100/80 border border-emerald-300/80 text-emerald-900 text-xs font-bold tracking-wide shadow-sm">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
             <span>{personalInfo.availability}</span>
           </div>
 
-          <div className="relative inline-flex items-center px-6 py-1.5 rounded-full bg-white border border-gray-200 shadow-sm text-xs font-semibold text-gray-800 tracking-wide">
-            {/* Doodle lines on top left */}
-            <svg className="absolute -top-3 -left-3 w-6 h-6 text-brand-orange animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M4 12C4 8 8 4 12 4" strokeLinecap="round" />
-              <path d="M2 7C4 5 7 2 12 2" strokeLinecap="round" />
-            </svg>
-            <span>{personalInfo.heroTag}</span>
+          <div className="inline-flex items-center space-x-2 px-5 py-1.5 rounded-full bg-white/90 border border-gray-300/80 shadow-sm text-xs font-semibold text-gray-800 tracking-wide">
+            <Sparkles size={14} className="text-brand-orange" />
+            <span>Fintech & SaaS Product Designer</span>
+          </div>
+        </div>
+
+        {/* ========================================================
+            ICONIC EDITORIAL TYPOGRAPHY (Matching Exact Reference)
+            ======================================================== */}
+        <div className="max-w-4xl mx-auto mb-10 text-[#111115] flex flex-col items-center sm:items-start pl-0 sm:pl-4 lg:pl-12">
+          
+          {/* ROW 1: SUBHAM + TOGGLE SWITCH + CONNECTOR */}
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-6 relative w-full">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight uppercase leading-none text-[#111115]">
+              SUBHAM
+            </h1>
+
+            {/* Interactive Toggle Switch Component */}
+            <div className="relative flex items-center">
+              <button
+                onClick={() => setIsToggleActive(!isToggleActive)}
+                className="relative w-28 sm:w-36 md:w-44 h-12 sm:h-16 md:h-20 rounded-full border-2 border-[#111115] bg-[#EFE9D7] p-1 transition-all duration-300 focus:outline-none cursor-pointer flex items-center shadow-inner hover:scale-105"
+                aria-label="Toggle Mode"
+                title="Click to toggle UI / UX!"
+              >
+                <div
+                  className={`w-9 sm:w-12 md:w-16 h-9 sm:h-12 md:h-16 rounded-full border-2 border-[#111115] shadow-md transition-all duration-300 flex items-center justify-center font-bold text-xs sm:text-sm ${
+                    isToggleActive
+                      ? 'translate-x-14 sm:translate-x-20 md:translate-x-24 bg-brand-orange text-white border-brand-orange'
+                      : 'translate-x-0 bg-[#FAF6EC] text-[#111115]'
+                  }`}
+                >
+                  {isToggleActive ? 'UX' : 'UI'}
+                </div>
+              </button>
+
+              {/* Top Dashed Connector Wire */}
+              <svg className="hidden lg:block absolute left-full top-1/2 -translate-y-1/2 w-32 h-16 pointer-events-none" viewBox="0 0 120 60" fill="none">
+                <path d="M 0 30 H 90 Q 110 30 110 50 V 60" stroke="#111115" strokeWidth="2" strokeDasharray="4 4" />
+              </svg>
+            </div>
+          </div>
+
+          {/* ROW 2: CIRCULAR NODE + PILL + KUMAR */}
+          <div className="flex items-center justify-center sm:justify-start gap-2.5 sm:gap-4 mt-2 sm:mt-3 relative w-full">
+            
+            {/* Concentric Circle Node with Pill Connector */}
+            <div className="flex items-center space-x-1.5 shrink-0 relative">
+              <div className="w-10 sm:w-14 md:w-16 h-10 sm:h-14 md:h-16 rounded-full border-2 border-[#111115] flex items-center justify-center bg-transparent">
+                <div className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5 rounded-full border-2 border-[#111115] bg-transparent" />
+              </div>
+
+              {/* Capsule connector */}
+              <div className="w-6 sm:w-10 h-4 sm:h-6 rounded-full border-2 border-[#111115] bg-transparent" />
+
+              {/* Dashed line dropping down to row 3 */}
+              <svg className="hidden md:block absolute top-full left-1/2 -translate-x-1/2 w-16 h-16 pointer-events-none" viewBox="0 0 60 60" fill="none">
+                <path d="M 30 0 V 35 Q 30 50 50 50 H 60" stroke="#111115" strokeWidth="2" strokeDasharray="4 4" />
+              </svg>
+            </div>
+
+            {/* Text: KUMAR */}
+            <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight uppercase leading-none text-[#111115]">
+              KUMAR
+            </h2>
+
+            {/* Horizontal Dashed Line to Right */}
+            <div className="hidden lg:flex flex-1 items-center ml-2">
+              <svg className="w-full h-3" viewBox="0 0 200 6" fill="none">
+                <line x1="0" y1="3" x2="200" y2="3" stroke="#111115" strokeWidth="2" strokeDasharray="4 4" />
+              </svg>
+            </div>
+          </div>
+
+          {/* ROW 3: VENN DIAGRAM + DESIGNER (OUTLINE) */}
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-5 mt-2 sm:mt-3 relative w-full">
+            
+            {/* Interlocking Venn Diagram Circles with Crosshair */}
+            <div className="relative w-20 sm:w-28 md:w-36 h-12 sm:h-16 md:h-20 flex items-center justify-center shrink-0">
+              <svg className="w-full h-full" viewBox="0 0 140 80" fill="none">
+                <circle cx="48" cy="40" r="30" stroke="#111115" strokeWidth="2" />
+                <circle cx="92" cy="40" r="30" stroke="#111115" strokeWidth="2" />
+                <line x1="25" y1="40" x2="115" y2="40" stroke="#111115" strokeWidth="2" />
+              </svg>
+            </div>
+
+            {/* Outline 'Designer' with 'creative' label */}
+            <div className="relative inline-block">
+              <span className="absolute -top-3 sm:-top-5 md:-top-6 right-1 sm:right-2 text-sm sm:text-lg md:text-xl font-extrabold text-[#111115] tracking-tight lowercase italic">
+                creative
+              </span>
+
+              <span
+                className="font-black italic tracking-tight text-5xl sm:text-7xl md:text-8xl lg:text-9xl block leading-none select-none text-transparent"
+                style={{
+                  WebkitTextStroke: '2.5px #111115',
+                }}
+              >
+                Designer
+              </span>
+            </div>
+
           </div>
 
         </div>
 
-        {/* Hero Heading */}
-        <div className="text-center max-w-4xl mx-auto mb-8 relative">
-          
-          {/* Mini corner scribble on title */}
-          <div className="absolute -top-4 left-4 hidden sm:block text-brand-orange">
-            <svg className="w-8 h-8" viewBox="0 0 30 30" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-              <path d="M5 25 Q 15 5, 25 15" />
-            </svg>
-          </div>
+        {/* ========================================================
+            HERO VALUE PROPOSITION & SPECIALTY TAGS
+            ======================================================== */}
+        <div className="max-w-2xl mx-auto space-y-4 text-center mt-6">
+          <p className="text-sm sm:text-base md:text-lg text-gray-800 leading-relaxed font-normal">
+            Product-focused <span className="text-gray-950 font-extrabold">UI/UX Designer</span> with{' '}
+            <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-brand-orange/10 text-brand-orange font-bold text-xs sm:text-sm">
+              2+ years experience
+            </span>{' '}
+            crafting intuitive <span className="text-gray-950 font-extrabold">Fintech, SaaS & Mobile</span> ecosystems. Driven by human-centered design, scalable <span className="text-gray-950 font-extrabold">design systems</span>, and measurable conversion growth.
+          </p>
 
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-[#111115] tracking-tight leading-[1.1]">
-            I’m <span className="text-brand-orange relative inline-block">
-              {personalInfo.name}
-              {/* Decorative underline burst */}
-              <svg className="absolute -bottom-2 left-0 w-full h-3 text-brand-orange/50" viewBox="0 0 100 20" preserveAspectRatio="none">
-                <path d="M0 10 Q 50 20, 100 10" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" />
-              </svg>
-            </span>,
-            <br className="hidden sm:inline" /> {personalInfo.role}
-          </h1>
-
-          {/* Redesigned Hero Value Proposition & Specialty Tags */}
-          <div className="mt-5 max-w-2xl mx-auto space-y-3.5">
-            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-center">
-              Product-focused <span className="text-gray-950 font-bold">UI/UX Designer</span> with{' '}
-              <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-brand-orange/10 text-brand-orange font-bold text-xs sm:text-sm">
-                2+ years experience
-              </span>{' '}
-              crafting intuitive <span className="text-gray-950 font-bold">Fintech, SaaS & Mobile</span> experiences. Specializing in human-centered research, scalable <span className="text-gray-950 font-bold">design systems</span>, and measurable conversion growth.
-            </p>
-
-            {/* Core Capability Chips */}
-            <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
-              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white border border-gray-200/90 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                <span>Fintech & SaaS UX</span>
-              </span>
-              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white border border-gray-200/90 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange" />
-                <span>Design Systems (Figma)</span>
-              </span>
-              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white border border-gray-200/90 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                <span>Mobile & Responsive Web</span>
-              </span>
-              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white border border-gray-200/90 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
-                <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                <span>WCAG 2.1 AA Accessibility</span>
-              </span>
-            </div>
+          {/* Core Capability Chips */}
+          <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+            <span className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-white border border-gray-300/80 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+              <span>Fintech & SaaS UX</span>
+            </span>
+            <span className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-white border border-gray-300/80 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-orange" />
+              <span>Design Systems (Figma)</span>
+            </span>
+            <span className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-white border border-gray-300/80 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+              <span>Mobile & Responsive Web</span>
+            </span>
+            <span className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-white border border-gray-300/80 text-xs font-semibold text-gray-800 shadow-sm hover:border-brand-orange hover:text-brand-orange transition-all cursor-default">
+              <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
+              <span>WCAG 2.1 AA Accessibility</span>
+            </span>
           </div>
 
           {/* Quick CTAs for Hiring Managers */}
-          <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
             <button
               onClick={scrollToCaseStudy}
-              className="px-6 py-3 rounded-full bg-[#111115] hover:bg-brand-orange text-white font-bold text-xs sm:text-sm transition-all shadow-md flex items-center space-x-2 cursor-pointer group hover:scale-105"
+              className="px-6 py-3.5 rounded-full bg-[#111115] hover:bg-brand-orange text-white font-bold text-xs sm:text-sm transition-all shadow-md flex items-center space-x-2 cursor-pointer group hover:scale-105"
             >
               <span>Explore Flagship Case Study</span>
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -182,7 +202,7 @@ const Hero = () => {
             <a
               href="/Subham_Kumar_Resume.pdf"
               download="Subham_Kumar_Resume.pdf"
-              className="px-6 py-3 rounded-full bg-brand-orange hover:bg-brand-orange-hover text-white font-bold text-xs sm:text-sm transition-all shadow-md flex items-center space-x-2 cursor-pointer hover:scale-105"
+              className="px-6 py-3.5 rounded-full bg-brand-orange hover:bg-brand-orange-hover text-white font-bold text-xs sm:text-sm transition-all shadow-md flex items-center space-x-2 cursor-pointer hover:scale-105"
             >
               <Download size={15} />
               <span>Download CV / Resume</span>
@@ -190,7 +210,7 @@ const Hero = () => {
 
             <button
               onClick={scrollToContact}
-              className="px-6 py-3 rounded-full bg-white hover:bg-gray-100 text-gray-800 font-bold text-xs sm:text-sm border border-gray-300 transition-all shadow-sm cursor-pointer hover:border-brand-orange"
+              className="px-6 py-3.5 rounded-full bg-white hover:bg-gray-100 text-gray-800 font-bold text-xs sm:text-sm border border-gray-300 transition-all shadow-sm cursor-pointer hover:border-brand-orange"
             >
               Get in Touch
             </button>
@@ -198,9 +218,7 @@ const Hero = () => {
         </div>
 
         {/* Bottom Metrics Bar for Recruiters */}
-        <div className="max-w-4xl mx-auto mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-gray-200/90 shadow-sm relative">
-          
-          {/* Subtle doodle badge attached to metrics */}
+        <div className="max-w-4xl mx-auto mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-gray-200/90 shadow-sm relative">
           <div className="absolute -top-3 right-6 bg-brand-orange text-white text-[9px] font-bold font-mono px-2 py-0.5 rounded-md uppercase tracking-wider shadow-sm rotate-2">
             Verified Results
           </div>
