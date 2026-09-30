@@ -147,7 +147,7 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* ROW 1: SUBHAM + TOGGLE SWITCH + CONNECTING RIGHT WIRE */}
+          {/* ROW 1: SUBHAM + TOGGLE SWITCH */}
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-6 relative w-full">
             <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] font-black tracking-tighter uppercase leading-none text-[#111115]">
               SUBHAM
@@ -179,15 +179,10 @@ const Hero = () => {
                   {isToggleActive ? 'UX' : 'UI'}
                 </div>
               </button>
-
-              {/* Top Dashed Connector Wire looping down toward Row 2 */}
-              <svg className="hidden lg:block absolute left-full top-1/2 -translate-y-1/2 w-36 xl:w-44 h-24 pointer-events-none z-0" viewBox="0 0 160 90" fill="none">
-                <path d="M 0 35 H 120 Q 145 35 145 60 V 90" stroke="#111115" strokeWidth="2" strokeDasharray="5 5" />
-              </svg>
             </div>
           </div>
 
-          {/* ROW 2: CIRCULAR NODE + PILL + KUMAR + RIGHT DASHED LINE */}
+          {/* ROW 2: CIRCULAR NODE + PILL + KUMAR */}
           <div className="flex items-center justify-center sm:justify-start gap-2.5 sm:gap-4 -mt-1 sm:-mt-2 relative w-full">
             
             {/* Concentric Circle Node with Pill Connector */}
@@ -198,24 +193,12 @@ const Hero = () => {
 
               {/* Capsule connector */}
               <div className="w-6 sm:w-8 md:w-10 h-4 sm:h-5 md:h-6 rounded-full border-2 border-[#111115] bg-transparent" />
-
-              {/* Vertical Dashed wire dropping directly into the Venn diagram below */}
-              <svg className="hidden sm:block absolute top-full left-5.5 sm:left-6.5 w-6 h-12 pointer-events-none" viewBox="0 0 20 40" fill="none">
-                <path d="M 10 0 V 40" stroke="#111115" strokeWidth="2" strokeDasharray="4 4" />
-              </svg>
             </div>
 
             {/* Text: KUMAR */}
             <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] font-black tracking-tighter uppercase leading-none text-[#111115]">
               KUMAR
             </h2>
-
-            {/* Horizontal Dashed Line to Right */}
-            <div className="hidden lg:flex flex-1 items-center ml-2 relative">
-              <svg className="w-full h-4" viewBox="0 0 220 10" fill="none">
-                <line x1="0" y1="5" x2="220" y2="5" stroke="#111115" strokeWidth="2" strokeDasharray="5 5" />
-              </svg>
-            </div>
           </div>
 
           {/* ROW 3: VENN DIAGRAM + DESIGNER (OUTLINE) */}
