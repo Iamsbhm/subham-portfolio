@@ -205,7 +205,7 @@ const Hero = () => {
               
               {/* Dribbble Box */}
               <a
-                href="https://dribbble.com"
+                href="https://dribbble.com/iamsbhm"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="View Dribbble Profile"
@@ -219,7 +219,7 @@ const Hero = () => {
 
               {/* Figma Box */}
               <a
-                href="https://www.figma.com/@subham"
+                href="https://www.figma.com/@iamsbhm"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="View Figma Community / Profile"
